@@ -321,6 +321,21 @@ public class TelaJogo {
 		button_2 = new JButton("Apagar jogo");
 		button_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				try{
+					if (table.getSelectedRow() >= 0) {
+					    String idStr = (String) table.getValueAt(table.getSelectedRow(), 0);
+					    int id = Integer.parseInt(idStr);
+					    Fachada.apagarJogo(id);
+					    label.setText("cancelou jogo " + id);
+					    listagem();
+					}
+					else
+						label.setText("jogo nao selecionado");
+				}
+				catch(Exception ex) {
+					label.setText(ex.getMessage());
+				}
+				
 				//falta implementar
 			}
 		});

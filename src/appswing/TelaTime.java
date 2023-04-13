@@ -1,6 +1,6 @@
 package appswing;
 
-import java.awt.Color;
+import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -10,17 +10,26 @@ import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import com.db4o.ObjectContainer;
-import com.db4o.query.Query;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
 
-import daodb4o.Util;
+import com.db4o.ObjectContainer;
+
+
+
 import modelo.Time;
 import regras_negocio.Fachada;
+import javax.swing.JList;
+import java.awt.ScrollPane;
+import javax.swing.JScrollPane;
+import java.awt.Color;
+import java.awt.SystemColor;
+
+
+
 
 public class TelaTime {
 
@@ -66,11 +75,12 @@ public class TelaTime {
 	private void initialize() {
 		frame = new JFrame();
 		frame.setTitle("Time");
-		frame.setBounds(100, 100, 765, 300);
+		frame.setBounds(100, 100, 668, 300);
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.addWindowListener(new WindowAdapter() {
 			@Override
 			public void windowOpened(WindowEvent e) {
+				Fachada.inicializar();
 				listagem();
 			}
 		});
@@ -121,7 +131,7 @@ public class TelaTime {
 		
 		label_2 = new JLabel("");
 		label_2.setForeground(new Color(0, 0, 205));
-		label_2.setBounds(10, 207, 687, 23);
+		label_2.setBounds(10, 207, 608, 23);
 		frame.getContentPane().add(label_2);
 		
 		label_3 = new JLabel("");
@@ -135,6 +145,28 @@ public class TelaTime {
 		table = new JTable();
 		table.setFillsViewportHeight(true);
 		scrollPane.setViewportView(table);
+		
+		JButton btnNewButton = new JButton("Apagar time");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try{
+					if (table.getSelectedRow() >= 0){
+						String nome = (String) table.getValueAt( table.getSelectedRow(), 0);
+
+						Fachada.apagarTime(nome);
+						label_2.setText("Time apagado" );
+						listagem();
+					}
+					else
+						label_2.setText("Time nao selecionado");
+				}
+				catch(Exception ex) {
+					label_2.setText(ex.getMessage());
+				}
+			}
+		});
+		btnNewButton.setBounds(370, 227, 114, 23);
+		frame.getContentPane().add(btnNewButton);
 	}
 	
 	public void listagem() {

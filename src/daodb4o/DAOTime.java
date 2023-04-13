@@ -19,10 +19,28 @@ public class DAOTime extends DAO<Time> {
 		else
 			return null;
 	}
-	
+
 
 	//--------------------------------------------
 	//  consultas
 	//--------------------------------------------
+	
+	
+	public List<Time> jogosTimes(String nome) {
+		Query q;
+		q = manager.query();
+		q.constrain(Time.class);
+		q.descend("nome").constrain(nome);
+		return q.execute();
+	}
+
+
+//	public List<Time> consultarJogos(String id) {
+//		Query q;
+//		q = manager.query();
+//		q.constrain(Time.class);
+//		q.descend("nome").descend("nome").constrain(nome);
+//		return q.execute();
+//	}
 }
 

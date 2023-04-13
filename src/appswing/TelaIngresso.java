@@ -127,7 +127,7 @@ public class TelaIngresso {
 		label_2 = new JLabel("jogos:");
 		label_2.setHorizontalAlignment(SwingConstants.LEFT);
 		label_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label_2.setBounds(467, 261, 47, 14);
+		label_2.setBounds(467, 261, 175, 14);
 		frame.getContentPane().add(label_2);
 
 		button_1 = new JButton("Criar ingresso individual");
@@ -164,7 +164,7 @@ public class TelaIngresso {
 		label_3 = new JLabel("codigo:");
 		label_3.setHorizontalAlignment(SwingConstants.LEFT);
 		label_3.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		label_3.setBounds(284, 261, 63, 14);
+		label_3.setBounds(284, 261, 168, 14);
 		frame.getContentPane().add(label_3);
 
 		button_2 = new JButton("Cancelar Ingresso");
@@ -172,10 +172,10 @@ public class TelaIngresso {
 			public void actionPerformed(ActionEvent e) {
 				try{
 					if (table.getSelectedRow() >= 0){
-						String codigo = (String) table.getValueAt( table.getSelectedRow(), 1);
-						Fachada.apagarIngresso(Integer.parseInt(codigo));
-						label.setText("cancelou ingresso " +codigo);
-						listagem();
+						int codigo = (int) table.getValueAt(table.getSelectedRow(), 1);
+					    Fachada.apagarIngresso(codigo);
+					    label.setText("cancelou ingresso " + codigo);
+					    listagem();
 					}
 					else
 						label.setText("ingresso nao selecionado");
@@ -198,8 +198,12 @@ public class TelaIngresso {
 					//leitura dos ids
 					do{
 						try {
-							id = JOptionPane.showInputDialog("digite o id do jogo ou <enter>");
-							lista.add(Integer.parseInt(id));
+							id = JOptionPane.showInputDialog("digite o id do jogo por espaço");
+							String temp[] = id.split(" ");
+							
+							for(String i : temp) {
+								lista.add(Integer.parseInt(i));
+							}
 						}
 						catch(NumberFormatException ex) {
 							label.setText("id nao numerico:");

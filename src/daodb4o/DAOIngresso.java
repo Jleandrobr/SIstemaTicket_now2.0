@@ -9,10 +9,10 @@ import modelo.Ingresso;
 public class DAOIngresso extends DAO<Ingresso>{
 
 	public Ingresso read(Object codigo) {
-		int codigo1 = (int) codigo;	
+//		int codigo1 = (int) codigo;	
 		Query q = manager.query();
 		q.constrain(Ingresso.class);
-		q.descend("codigo1").constrain(codigo1);
+		q.descend("codigo").constrain(codigo);
 		List<Ingresso> resultados = q.execute();
 		if (resultados.size()>0)
 			return resultados.get(0);
