@@ -28,15 +28,11 @@ import javax.swing.border.LineBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.text.MaskFormatter;
 
-import com.db4o.ObjectContainer;
-import com.db4o.query.Query;
-
 import modelo.Ingresso;
 import modelo.IngressoGrupo;
 import modelo.IngressoIndividual;
 import modelo.Jogo;
 import regras_negocio.Fachada;
-import daodb4o.Util;
 
 public class TelaJogo {
 	private JFrame frame;
@@ -62,7 +58,6 @@ public class TelaJogo {
 	private JButton button_1;
 	private JTextField textField_4;
 	private JButton button_2;
-	private ObjectContainer manager;
 
 
 

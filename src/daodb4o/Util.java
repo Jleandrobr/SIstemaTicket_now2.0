@@ -7,6 +7,7 @@ import com.db4o.cs.Db4oClientServer;
 import com.db4o.cs.config.ClientConfiguration;
 
 import modelo.Ingresso;
+import modelo.IngressoGrupo;
 import modelo.Jogo;
 import modelo.Time;
 
@@ -39,6 +40,9 @@ public class Util {
 		config.common().objectClass(Ingresso.class).cascadeOnDelete(false);;
 		config.common().objectClass(Ingresso.class).cascadeOnUpdate(true);;
 		config.common().objectClass(Ingresso.class).cascadeOnActivate(true);
+		config.common().objectClass(IngressoGrupo.class).cascadeOnDelete(false);;
+		config.common().objectClass(IngressoGrupo.class).cascadeOnUpdate(true);;
+		config.common().objectClass(IngressoGrupo.class).cascadeOnActivate(true);
 		
 		// criar indices (opcional) sobre campos de busca
 		config.common().objectClass(Time.class).objectField("nome").indexed(true);
