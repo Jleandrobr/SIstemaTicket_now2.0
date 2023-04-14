@@ -20,6 +20,10 @@ public class Time {
 		this.origem = origem;
 	}
 
+	public ArrayList<Jogo> getJogos() {
+		return jogos;
+	}
+
 	public double obterValorArrecadado() {
 		double soma=0;
 		for(Jogo j : jogos)

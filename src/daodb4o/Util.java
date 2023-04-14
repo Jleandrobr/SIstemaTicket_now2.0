@@ -30,14 +30,14 @@ public class Util {
 		config.common().messageLevel(0);  // mensagens na tela 0(desliga),1,2,3...
 		
 		// habilitar cascata na altera��o, remo��o e leitura
-		config.common().objectClass(Time.class).cascadeOnDelete(false);
-		config.common().objectClass(Time.class).cascadeOnUpdate(true);
+		config.common().objectClass(Time.class).cascadeOnDelete(false);;
+		config.common().objectClass(Time.class).cascadeOnUpdate(true);;
 		config.common().objectClass(Time.class).cascadeOnActivate(true);
-		config.common().objectClass(Jogo.class).cascadeOnDelete(false);
-		config.common().objectClass(Jogo.class).cascadeOnUpdate(true);
+		config.common().objectClass(Jogo.class).cascadeOnDelete(false);;
+		config.common().objectClass(Jogo.class).cascadeOnUpdate(true);;
 		config.common().objectClass(Jogo.class).cascadeOnActivate(true);
-		config.common().objectClass(Ingresso.class).cascadeOnDelete(false);
-		config.common().objectClass(Ingresso.class).cascadeOnUpdate(true);
+		config.common().objectClass(Ingresso.class).cascadeOnDelete(false);;
+		config.common().objectClass(Ingresso.class).cascadeOnUpdate(true);;
 		config.common().objectClass(Ingresso.class).cascadeOnActivate(true);
 		
 		// criar indices (opcional) sobre campos de busca
@@ -63,14 +63,14 @@ public class Util {
 		config.common().messageLevel(0);   //0,1,2,3,4
 
 		// habilitar cascata na altera��o, remo��o e leitura
-		config.common().objectClass(Time.class).cascadeOnDelete(false);
-		config.common().objectClass(Time.class).cascadeOnUpdate(true);
+		config.common().objectClass(Time.class).cascadeOnDelete(false);;
+		config.common().objectClass(Time.class).cascadeOnUpdate(true);;
 		config.common().objectClass(Time.class).cascadeOnActivate(true);
-		config.common().objectClass(Jogo.class).cascadeOnDelete(false);
-		config.common().objectClass(Jogo.class).cascadeOnUpdate(true);
+		config.common().objectClass(Jogo.class).cascadeOnDelete(false);;
+		config.common().objectClass(Jogo.class).cascadeOnUpdate(true);;
 		config.common().objectClass(Jogo.class).cascadeOnActivate(true);
-		config.common().objectClass(Ingresso.class).cascadeOnDelete(false);
-		config.common().objectClass(Ingresso.class).cascadeOnUpdate(true);
+		config.common().objectClass(Ingresso.class).cascadeOnDelete(false);;
+		config.common().objectClass(Ingresso.class).cascadeOnUpdate(true);;
 		config.common().objectClass(Ingresso.class).cascadeOnActivate(true);
 		
 		// criar indices (opcional) sobre campos de busca
