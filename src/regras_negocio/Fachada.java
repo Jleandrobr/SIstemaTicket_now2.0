@@ -56,8 +56,6 @@ public class Fachada {
 	
 	public static ArrayList<Jogo> listarJogos() {
 		DAO.begin();
-//		List<Jogo> resultados = daojogo.readAll();	//retorna todos os jogos
-//		return resultados;
 		ArrayList<Jogo> Listarjogos = new ArrayList<>();
 		for (Jogo j: daojogo.readAll()){
 			Listarjogos.add(j);
@@ -75,8 +73,6 @@ public class Fachada {
 	
 	public static ArrayList<Ingresso> listarIngressos() {
 		DAO.begin();
-//		List<Ingresso> resultados = daoingresso.readAll();   //retorna todos os ingressos
-//		return resultados;
 		ArrayList<Ingresso> Listaringresso = new ArrayList<>();
 		for (Ingresso i: daoingresso.readAll()){
 				Listaringresso.add(i);
@@ -87,9 +83,6 @@ public class Fachada {
 	
 	public static ArrayList<Jogo> listarJogos(String data) {
 		DAO.begin();
-//		ArrayList<Jogo> resultados =  (ArrayList<Jogo>) daojogo.listarJogos(data);
-//		DAO.commit();
-//		return resultados; //retorna todos os jogos
 		ArrayList<Jogo> jogosPorData = new ArrayList<>();
 		for (Jogo j: daojogo.readAll()){
 			if(j.getData().equals(data)){
@@ -223,8 +216,6 @@ public class Fachada {
 			idsJogos.add(j.getId());
 		}
 		
-		//verificar regras de negocio
-
 		
 		//verificar unicididade no sistema
 		//gerar codigo aleat�rio 
@@ -237,7 +228,6 @@ public class Fachada {
 		//criar o ingresso grupo 
 		ingresso = new IngressoGrupo(codigo);
 		
-
 		
 		for(Integer i: ids) {
 			if(!idsJogos.contains(i)) {
@@ -283,7 +273,6 @@ public class Fachada {
 				j.remover(grupo);
 				j.setEstoque(j.getEstoque()+1);
 				daojogo.update(j);
-				daoingressogrupo.update(grupo);
 			}
 		}
 		else 
@@ -294,7 +283,6 @@ public class Fachada {
 				daojogo.update(jogo);
 			}
 		
-
 		//apagar ingresso no banco		
 		daoingresso.delete(ingresso);
 		DAO.commit();
@@ -306,8 +294,6 @@ public class Fachada {
 		Time time = daotime.read(nome);
 		if(time == null)
 			throw new Exception("Time inexistente");
-		
-
 
 		if(time.getJogos().size()>0) {
 			throw new Exception("time ainda possui jogos");
@@ -323,7 +309,6 @@ public class Fachada {
 		    	daotime.update(time);
 		    }
 		}
-		
 		}
 		
 		//apagar time no banco
@@ -353,6 +338,7 @@ public class Fachada {
 			    }
 		    }
 		}
+		
 		//apagar jogo no banco
 		daojogo.delete(jogo);
 		DAO.commit();
@@ -383,18 +369,16 @@ public class Fachada {
 		DAO.commit();
 		return resultados;
 	}
-	
-//	public static List<Ingresso> consultaCodigo(int ingresso){
-//		DAO.begin();
-//		ArrayList<Ingresso> codIngresso = new ArrayList<Ingresso>();
-//		for(Ingresso i : codIngresso) {
-//			codIngresso.add(i);
-//			for(Ingresso i1: codIngresso) {
-//			if (i.getCodigo() == codIngresso) {
-//				
-//			}
-//			}
-//		}
-//		
-//	}
+	public static List<Time> timeNTimes(int ingresso) {
+		DAO.begin();
+		List<Time> resultados =  daotime.timeNTimes(ingresso);
+		DAO.commit();
+		return resultados;
+	}
+	public static List<Jogo> jogosMaisIngressos() {
+		DAO.begin();
+		List<Jogo> resultados =  daojogo.jogosMaisIngressos();
+		DAO.commit();
+		return resultados;
+	}
 }

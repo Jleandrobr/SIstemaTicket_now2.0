@@ -253,7 +253,7 @@ public class TelaIngresso {
 						for(Jogo j : gp.getJogos()) 	//obter os id  dos jogos
 							texto += j.getId()+ "," ;
 
-						model.addRow(new Object[]{"Grupo" ,ingresso.getCodigo(), /*ingresso.calcularValor()*/ 0 , texto});
+						model.addRow(new Object[]{"Grupo" ,ingresso.getCodigo(), ingresso.calcularValor(), texto});
 					}
 			}
 			
