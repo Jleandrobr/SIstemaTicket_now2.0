@@ -154,6 +154,16 @@ public class TelaConsulta {
 						List<Jogo> resultado3 = Fachada.jogosIngressos(ingresso);
 						listagemJogo(resultado3);
 						break;
+					case 3: 
+						String codigo1 = JOptionPane.showInputDialog("digite o N");
+						int ingresso1 = Integer.parseInt(codigo1);
+						List<Time> resultado4 = Fachada.timeNTimes(ingresso1);
+						listagemTime(resultado4);
+						break;
+					case 4: 
+						List<Jogo> resultado5 = Fachada.jogosMaisIngressos();
+						listagemJogo(resultado5);
+						break;
 
 					}
 
@@ -163,7 +173,7 @@ public class TelaConsulta {
 		frame.getContentPane().add(button);
 
 		comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Jogos dos times", "consultar jogo por id", "localizar jogo por ingresso"}));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Jogos dos times", "consultar jogo por id", "localizar jogo por ingresso","time que possuem N jogos", "jogos que tem o preco mais barato/jogos que tem mais ingressos"}));
 		comboBox.setBounds(21, 10, 513, 22);
 		frame.getContentPane().add(comboBox);
 	}

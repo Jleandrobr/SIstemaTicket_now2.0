@@ -52,7 +52,15 @@ public class DAOJogo extends DAO<Jogo> {
 		Query q;
 		q = manager.query();
 		q.constrain(Jogo.class);
-		q.constrain(new Filtro(ingresso));
+		q.descend("ingressos").descend("codigo").constrain(ingresso);
+		return q.execute();
+	}
+	
+	public List<Jogo> jogosMaisIngressos() {
+		Query q;
+		q = manager.query();
+		q.constrain(Jogo.class);
+		q.descend("jogo").constrain("preco");
 		return q.execute();
 	}
 	
@@ -69,5 +77,8 @@ public class DAOJogo extends DAO<Jogo> {
 				candidate.include(false);
 		}
 	}
+
+	
+	
 	
 }
