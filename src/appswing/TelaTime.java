@@ -1,6 +1,6 @@
 package appswing;
 
-import java.awt.EventQueue;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
@@ -10,23 +10,15 @@ import java.util.List;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
-import com.jgoodies.forms.factories.DefaultComponentFactory;
-
 import com.db4o.ObjectContainer;
-
-
 
 import modelo.Time;
 import regras_negocio.Fachada;
-import javax.swing.JList;
-import java.awt.ScrollPane;
-import javax.swing.JScrollPane;
-import java.awt.Color;
-import java.awt.SystemColor;
 
 
 

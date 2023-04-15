@@ -154,6 +154,13 @@ public class TelaConsulta {
 						List<Jogo> resultado3 = Fachada.jogosIngressos(ingresso);
 						listagemJogo(resultado3);
 						break;
+//					case 3: 
+//						String codigo1 = JOptionPane.showInputDialog("digite o codigo do ingresso");
+//						int ingresso1 = Integer.parseInt(codigo1);
+//						List<Jogo> resultado4 = Fachada.consultaCodigo(ingresso1);
+//						listagemJogo(resultado4);
+//						break;
+						
 
 					}
 

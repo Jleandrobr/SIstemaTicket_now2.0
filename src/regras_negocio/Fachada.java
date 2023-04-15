@@ -224,14 +224,7 @@ public class Fachada {
 		}
 		
 		//verificar regras de negocio
-//		ArrayList<Jogo> jogos = new ArrayList<Jogo>();
-//		for (int id : ids) {
-//		    Jogo jogo = daojogo.read(id);
-//		    if (jogo == null) {
-//		        throw new Exception("Jogo com id " + id + " não encontrado.");
-//		    }
-//		    jogos.add(jogo);
-//		}
+
 		
 		//verificar unicididade no sistema
 		//gerar codigo aleat�rio 
@@ -244,17 +237,7 @@ public class Fachada {
 		//criar o ingresso grupo 
 		ingresso = new IngressoGrupo(codigo);
 		
-//		//relacionar este ingresso com os jogos indicados e vice-versa
-//		for (Jogo j: ids) {
-//			j.adicionar(ingresso);
-//			j.setEstoque(j.getEstoque()-1);
-//			ingresso.adicionar(j);
-//		}
-//		ArrayList<Jogo> jogosIndicados = new ArrayList<Jogo>(); //jogos que o usuario queira adicionar no ingresso
-//		for (int id : ids) {
-//		    jogo = daojogo.read(id); // método para consultar jogo por ID
-//		    jogosIndicados.add(jogo);
-//		}
+
 		
 		for(Integer i: ids) {
 			if(!idsJogos.contains(i)) {
@@ -299,8 +282,8 @@ public class Fachada {
 			for (Jogo j : jogos) {
 				j.remover(grupo);
 				j.setEstoque(j.getEstoque()+1);
-				grupo.remover(j);
 				daojogo.update(j);
+				daoingressogrupo.update(grupo);
 			}
 		}
 		else 
@@ -324,17 +307,7 @@ public class Fachada {
 		if(time == null)
 			throw new Exception("Time inexistente");
 		
-//		if(! time.isFinalizado()) 
-//			throw new Exception ("Time ainda contem jogos nao pode ser excluido " + nome);
-		
-//		for (Jogo j : time.getJogos()) {
-//			Ingresso ingresso = j.getIngressos();
-//			
-//			Ingresso.remover(j);
-//			//atualizar o cliente no banco
-//			daoingresso.update(ingresso);
-//			//apagar o aluguel
-//			daojogo.delete(j);
+
 
 		if(time.getJogos().size()>0) {
 			throw new Exception("time ainda possui jogos");
@@ -351,15 +324,6 @@ public class Fachada {
 		    }
 		}
 		
-//		if (jogo instanceof Jogo ) {
-//		    List<Ingresso> ingressos = jogo.getIngressos();
-//		    // verifique se há ingressos antes de tentar removê-los
-//		    if (!ingressos.isEmpty()) {
-//		        Ingresso ingresso = ingressos.get(0); // selecione o primeiro ingresso
-//		        jogo.remover(ingresso);
-//		        jogo.setEstoque(jogo.getEstoque() + 1);
-//		        daojogo.update(jogo);
-//		    }
 		}
 		
 		//apagar time no banco
@@ -389,20 +353,6 @@ public class Fachada {
 			    }
 		    }
 		}
-		
-//		if (jogo instanceof Jogo ) {
-//			Ingresso ingresso = jogo.getIngressos();
-//			jogo.remover(ingresso);
-//			jogo.setEstoque(jogo.getEstoque()+1);
-//			daojogo.update(jogo);
-//		}
-		
-//		if (ingresso instanceof IngressoIndividual individuo) {
-//			Jogo jogo = individuo.getJogo();
-//			jogo.remover(individuo);
-//			jogo.setEstoque(jogo.getEstoque()+1);
-//			daojogo.update(jogo);
-//		}
 		//apagar jogo no banco
 		daojogo.delete(jogo);
 		DAO.commit();
@@ -433,4 +383,18 @@ public class Fachada {
 		DAO.commit();
 		return resultados;
 	}
+	
+//	public static List<Ingresso> consultaCodigo(int ingresso){
+//		DAO.begin();
+//		ArrayList<Ingresso> codIngresso = new ArrayList<Ingresso>();
+//		for(Ingresso i : codIngresso) {
+//			codIngresso.add(i);
+//			for(Ingresso i1: codIngresso) {
+//			if (i.getCodigo() == codIngresso) {
+//				
+//			}
+//			}
+//		}
+//		
+//	}
 }
