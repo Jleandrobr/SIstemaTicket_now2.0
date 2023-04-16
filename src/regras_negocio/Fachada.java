@@ -375,9 +375,15 @@ public class Fachada {
 		DAO.commit();
 		return resultados;
 	}
-	public static List<Jogo> jogosMaisIngressos() {
+//	public static List<Jogo> jogosMaisIngressos() {
+//		DAO.begin();
+//		List<Jogo> resultados =  daojogo.jogosMaisIngressos();
+//		DAO.commit();
+//		return resultados;
+//	}
+	public static List<Jogo> consultarLocais(String local) {
 		DAO.begin();
-		List<Jogo> resultados =  daojogo.jogosMaisIngressos();
+		List<Jogo> resultados =  daojogo.consultarLocais(local);
 		DAO.commit();
 		return resultados;
 	}
