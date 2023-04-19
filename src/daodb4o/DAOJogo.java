@@ -31,14 +31,6 @@ public class DAOJogo extends DAO<Jogo> {
 	//  consultas
 	//--------------------------------------------
 	
-//	public List<Jogo> listarJogos(String data){
-//		Query q;
-//		q = manager.query();
-//		q.constrain(Jogo.class);
-//		q.descend(data).constrain(true);
-//		return q.execute();
-//		
-//	}
 	
 	public List<Jogo> consultarJogos(int id) {
 		Query q;
@@ -56,11 +48,11 @@ public class DAOJogo extends DAO<Jogo> {
 		return q.execute();
 	}
 	
-	public List<Jogo> jogosMaisIngressos() {
+	public List<Jogo> consultarLocais(String local) {
 		Query q;
 		q = manager.query();
 		q.constrain(Jogo.class);
-		q.descend("jogo").constrain("preco");
+		q.descend("local").constrain(local);
 		return q.execute();
 	}
 	

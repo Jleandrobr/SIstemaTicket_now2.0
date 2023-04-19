@@ -266,7 +266,7 @@ public class Fachada {
 		
 		//remover o relacionamento entre o ingresso e o(s) jogo(s) ligados a ele
 		//o codigo refere-se a ingresso individual ou grupo
-		ingresso = daoingresso.read(codigo);
+//		ingresso = daoingresso.read(codigo);
 		if (ingresso instanceof IngressoGrupo grupo) {
 			ArrayList<Jogo> jogos = grupo.getJogos();
 			for (Jogo j : jogos) {
@@ -295,7 +295,7 @@ public class Fachada {
 		if(time == null)
 			throw new Exception("Time inexistente");
 
-		if(time.getJogos().size()>0) {
+		if(time.getJogos().size() > 0) {
 			throw new Exception("time ainda possui jogos");
 		}
 		
@@ -326,7 +326,7 @@ public class Fachada {
 		if(jogo.getIngressos().size()>0) {
 			throw new Exception("jogo possui ingressos");
 		}
-		
+				
 		if (jogo instanceof Jogo ) {
 		    List<Ingresso> ingressos = jogo.getIngressos();
 		    // verifique se há ingressos antes de tentar removê-los
@@ -338,7 +338,6 @@ public class Fachada {
 			    }
 		    }
 		}
-		
 		//apagar jogo no banco
 		daojogo.delete(jogo);
 		DAO.commit();
@@ -375,9 +374,10 @@ public class Fachada {
 		DAO.commit();
 		return resultados;
 	}
-	public static List<Jogo> jogosMaisIngressos() {
+
+	public static List<Jogo> consultarLocais(String local) {
 		DAO.begin();
-		List<Jogo> resultados =  daojogo.jogosMaisIngressos();
+		List<Jogo> resultados =  daojogo.consultarLocais(local);
 		DAO.commit();
 		return resultados;
 	}
