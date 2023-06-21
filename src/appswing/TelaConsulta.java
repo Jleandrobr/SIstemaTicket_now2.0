@@ -31,7 +31,7 @@ import javax.swing.table.DefaultTableModel;
 
 import com.db4o.ObjectContainer;
 
-import daodb4o.Util;
+import daojpa.Util;
 import modelo.Time;
 import modelo.Jogo;
 import modelo.Ingresso;
@@ -161,10 +161,10 @@ public class TelaConsulta {
 						listagemTime(resultado4);
 						break;
 					case 4: 
-						List<Jogo> resultado5 = Fachada.jogosMaisIngressos();
+						String local = JOptionPane.showInputDialog("digite o local do jogo");
+						List<Jogo> resultado5 = Fachada.consultarLocais(local);
 						listagemJogo(resultado5);
 						break;
-
 					}
 
 			}
@@ -173,7 +173,7 @@ public class TelaConsulta {
 		frame.getContentPane().add(button);
 
 		comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Jogos dos times", "consultar jogo por id", "localizar jogo por ingresso","time que possuem N jogos", "jogos que tem o preco mais barato/jogos que tem mais ingressos"}));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Jogos dos times", "consultar jogo por id", "localizar jogo por ingresso","time que possuem N jogos", "consultar jogos neste local"}));
 		comboBox.setBounds(21, 10, 513, 22);
 		frame.getContentPane().add(comboBox);
 	}

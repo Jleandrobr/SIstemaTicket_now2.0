@@ -1,19 +1,33 @@
 /**********************************
  * IFPB - Curso Superior de Tec. em Sist. para Internet
  * Persistencia de objetos
- * Prof. Fausto Maranhão Ayres
+ * Prof. Fausto Maranhï¿½o Ayres
  **********************************/
 package modelo;
 
 import java.util.ArrayList;
 
+import jakarta.persistence.Access;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.Entity;
+
+
+@Entity
+@Access(AccessType.PROPERTY)
 public class IngressoGrupo extends Ingresso {
 	
+//	@OneToMany(mappedBy = "ingressogrupo", 
+//			cascade={CascadeType.PERSIST, CascadeType.MERGE}, 
+//			fetch = FetchType.LAZY)
+//	@ManyToMany(mappedBy="ingresso",
+//			cascade=CascadeType.ALL)
 	private ArrayList<Jogo> jogos = new ArrayList<>();
 	
+	public IngressoGrupo() {}
 	public IngressoGrupo(int codigo) {
 		super(codigo);
 	}
+
 
 	public double calcularValor() {
 		double soma=0;

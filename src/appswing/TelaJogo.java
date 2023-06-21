@@ -31,12 +31,12 @@ import javax.swing.text.MaskFormatter;
 import com.db4o.ObjectContainer;
 import com.db4o.query.Query;
 
+import daojpa.Util;
 import modelo.Ingresso;
 import modelo.IngressoGrupo;
 import modelo.IngressoIndividual;
 import modelo.Jogo;
 import regras_negocio.Fachada;
-import daodb4o.Util;
 
 public class TelaJogo {
 	private JFrame frame;

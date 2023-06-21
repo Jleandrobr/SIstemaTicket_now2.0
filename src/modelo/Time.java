@@ -7,13 +7,29 @@ package modelo;
 
 import java.util.ArrayList;
 
+import jakarta.persistence.Access;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+
+@Entity
+@Access(AccessType.PROPERTY)
 public class Time {
+	@Id
 	private String nome;
 	private String origem;
+	
+	@ManyToMany(mappedBy="time",
+			cascade=CascadeType.ALL)
 	private ArrayList<Jogo> jogos = new ArrayList<>();
+	
 	private boolean finalizado = false;
 
-	
+	public Time() {}
+
 	public Time(String nome, String origem) {
 		super();
 		this.nome = nome;

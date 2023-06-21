@@ -1,0 +1,13 @@
+[EL Fine]: server: 2023-06-20 13:50:22.016--Thread(Thread[main,5,main])--Configured server platform: org.eclipse.persistence.platform.server.NoServerPlatform
+[EL Config]: metadata: 2023-06-20 13:50:22.276--ServerSession(2067180044)--Thread(Thread[main,5,main])--The element [method getTime2] is being defaulted to a one to one mapping.
+[EL Config]: metadata: 2023-06-20 13:50:22.28--ServerSession(2067180044)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [method getTime2] is being defaulted to: class modelo.Time.
+[EL Config]: metadata: 2023-06-20 13:50:22.28--ServerSession(2067180044)--Thread(Thread[main,5,main])--The element [method getTime1] is being defaulted to a one to one mapping.
+[EL Config]: metadata: 2023-06-20 13:50:22.281--ServerSession(2067180044)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [method getTime1] is being defaulted to: class modelo.Time.
+[EL Config]: metadata: 2023-06-20 13:50:22.281--ServerSession(2067180044)--Thread(Thread[main,5,main])--The element [method getJogo] is being defaulted to a one to one mapping.
+[EL Config]: metadata: 2023-06-20 13:50:22.281--ServerSession(2067180044)--Thread(Thread[main,5,main])--The target entity (reference) class for the one to one mapping element [method getJogo] is being defaulted to: class modelo.Jogo.
+[EL Config]: metadata: 2023-06-20 13:50:22.281--ServerSession(2067180044)--Thread(Thread[main,5,main])--The access type for the persistent class [class modelo.Usuario] is set to [FIELD].
+[EL Config]: metadata: 2023-06-20 13:50:22.282--ServerSession(2067180044)--Thread(Thread[main,5,main])--The alias name for the entity class [class modelo.Time] is being defaulted to: Time.
+[EL Config]: metadata: 2023-06-20 13:50:22.284--ServerSession(2067180044)--Thread(Thread[main,5,main])--The table name for entity [class modelo.Time] is being defaulted to: TIME.
+[EL Config]: metadata: 2023-06-20 13:50:22.296--ServerSession(2067180044)--Thread(Thread[main,5,main])--The column name for element [getOrigem] is being defaulted to: ORIGEM.
+[EL Config]: metadata: 2023-06-20 13:50:22.303--ServerSession(2067180044)--Thread(Thread[main,5,main])--The column name for element [getNome] is being defaulted to: NOME.
+[EL Config]: metadata: 2023-06-20 13:50:22.303--ServerSession(2067180044)--Thread(Thread[main,5,main])--The column name for element [isFinalizado] is being defaulted to: FINALIZADO.

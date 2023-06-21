@@ -1,0 +1,264 @@
+09:58:59,120  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+09:58:59,123  INFO DAO:37 - provedor => eclipselink
+09:58:59,124  INFO DAO:38 - sgbd => postgresql
+09:58:59,124  INFO DAO:39 - ip => localhost
+09:58:59,126  INFO DAO:40 - banco => ticketnow
+09:58:59,126  INFO DAO:45 - configurando postgresql
+09:58:59,691  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.IngressoIndividual] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+09:59:24,708  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+09:59:24,712  INFO DAO:37 - provedor => eclipselink
+09:59:24,712  INFO DAO:38 - sgbd => postgresql
+09:59:24,712  INFO DAO:39 - ip => localhost
+09:59:24,714  INFO DAO:40 - banco => ticketnow
+09:59:24,714  INFO DAO:45 - configurando postgresql
+09:59:25,250  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.IngressoIndividual] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:00:24,328  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:00:24,332  INFO DAO:37 - provedor => eclipselink
+10:00:24,332  INFO DAO:38 - sgbd => postgresql
+10:00:24,332  INFO DAO:39 - ip => localhost
+10:00:24,334  INFO DAO:40 - banco => ticketnow
+10:00:24,334  INFO DAO:45 - configurando postgresql
+10:00:24,883  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.IngressoIndividual] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:04:02,126  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:04:02,129  INFO DAO:37 - provedor => eclipselink
+10:04:02,129  INFO DAO:38 - sgbd => postgresql
+10:04:02,129  INFO DAO:39 - ip => localhost
+10:04:02,132  INFO DAO:40 - banco => ticketnow
+10:04:02,132  INFO DAO:45 - configurando postgresql
+10:04:02,684  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [time] on the class [class modelo.Jogo] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:06:32,802  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:06:32,805  INFO DAO:37 - provedor => eclipselink
+10:06:32,805  INFO DAO:38 - sgbd => postgresql
+10:06:32,805  INFO DAO:39 - ip => localhost
+10:06:32,807  INFO DAO:40 - banco => ticketnow
+10:06:32,807  INFO DAO:45 - configurando postgresql
+10:06:33,354  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [time] on the class [class modelo.Jogo] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:08:05,521  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:08:05,524  INFO DAO:37 - provedor => eclipselink
+10:08:05,525  INFO DAO:38 - sgbd => postgresql
+10:08:05,525  INFO DAO:39 - ip => localhost
+10:08:05,527  INFO DAO:40 - banco => ticketnow
+10:08:05,527  INFO DAO:45 - configurando postgresql
+10:08:06,092  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [time] on the class [class modelo.Jogo] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:14:33,625  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:14:33,628  INFO DAO:37 - provedor => eclipselink
+10:14:33,628  INFO DAO:38 - sgbd => postgresql
+10:14:33,628  INFO DAO:39 - ip => localhost
+10:14:33,630  INFO DAO:40 - banco => ticketnow
+10:14:33,631  INFO DAO:45 - configurando postgresql
+10:14:34,172  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [ingressogrupo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:16:24,265  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:16:24,269  INFO DAO:37 - provedor => eclipselink
+10:16:24,269  INFO DAO:38 - sgbd => postgresql
+10:16:24,269  INFO DAO:39 - ip => localhost
+10:16:24,271  INFO DAO:40 - banco => ticketnow
+10:16:24,271  INFO DAO:45 - configurando postgresql
+10:16:24,801  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [ingressogrupo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:24:57,709  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:24:57,712  INFO DAO:37 - provedor => eclipselink
+10:24:57,713  INFO DAO:38 - sgbd => postgresql
+10:24:57,713  INFO DAO:39 - ip => localhost
+10:24:57,715  INFO DAO:40 - banco => ticketnow
+10:24:57,715  INFO DAO:45 - configurando postgresql
+10:24:58,300  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [ingressogrupo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:36:47,979  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:36:47,982  INFO DAO:37 - provedor => eclipselink
+10:36:47,982  INFO DAO:38 - sgbd => postgresql
+10:36:47,982  INFO DAO:39 - ip => localhost
+10:36:47,984  INFO DAO:40 - banco => ticketnow
+10:36:47,984  INFO DAO:45 - configurando postgresql
+10:36:48,506  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:37:08,822  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:37:08,826  INFO DAO:37 - provedor => eclipselink
+10:37:08,826  INFO DAO:38 - sgbd => postgresql
+10:37:08,826  INFO DAO:39 - ip => localhost
+10:37:08,828  INFO DAO:40 - banco => ticketnow
+10:37:08,829  INFO DAO:45 - configurando postgresql
+10:37:09,413  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:54:01,911  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:54:01,915  INFO DAO:37 - provedor => eclipselink
+10:54:01,915  INFO DAO:38 - sgbd => postgresql
+10:54:01,915  INFO DAO:39 - ip => localhost
+10:54:01,917  INFO DAO:40 - banco => ticketnow
+10:54:01,918  INFO DAO:45 - configurando postgresql
+10:54:02,488  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [time] on the class [class modelo.Jogo] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:55:25,866  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:55:25,870  INFO DAO:37 - provedor => eclipselink
+10:55:25,870  INFO DAO:38 - sgbd => postgresql
+10:55:25,870  INFO DAO:39 - ip => localhost
+10:55:25,872  INFO DAO:40 - banco => ticketnow
+10:55:25,872  INFO DAO:45 - configurando postgresql
+10:55:26,430  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [time] on the class [class modelo.Jogo] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:56:31,723  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:56:31,726  INFO DAO:37 - provedor => eclipselink
+10:56:31,727  INFO DAO:38 - sgbd => postgresql
+10:56:31,727  INFO DAO:39 - ip => localhost
+10:56:31,729  INFO DAO:40 - banco => ticketnow
+10:56:31,729  INFO DAO:45 - configurando postgresql
+10:56:32,312  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+10:57:35,010  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+10:57:35,013  INFO DAO:37 - provedor => eclipselink
+10:57:35,013  INFO DAO:38 - sgbd => postgresql
+10:57:35,013  INFO DAO:39 - ip => localhost
+10:57:35,015  INFO DAO:40 - banco => ticketnow
+10:57:35,015  INFO DAO:45 - configurando postgresql
+10:57:35,593  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+13:31:59,478  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+13:31:59,481  INFO DAO:37 - provedor => eclipselink
+13:31:59,481  INFO DAO:38 - sgbd => postgresql
+13:31:59,481  INFO DAO:39 - ip => localhost
+13:31:59,483  INFO DAO:40 - banco => ticketnow
+13:31:59,483  INFO DAO:45 - configurando postgresql
+13:32:00,042  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+13:32:34,437  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+13:32:34,440  INFO DAO:37 - provedor => eclipselink
+13:32:34,441  INFO DAO:38 - sgbd => postgresql
+13:32:34,441  INFO DAO:39 - ip => localhost
+13:32:34,443  INFO DAO:40 - banco => ticketnow
+13:32:34,443  INFO DAO:45 - configurando postgresql
+13:32:35,023  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+13:33:04,818  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+13:33:04,821  INFO DAO:37 - provedor => eclipselink
+13:33:04,822  INFO DAO:38 - sgbd => postgresql
+13:33:04,822  INFO DAO:39 - ip => localhost
+13:33:04,824  INFO DAO:40 - banco => ticketnow
+13:33:04,824  INFO DAO:45 - configurando postgresql
+13:33:05,347  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+13:48:17,103  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+13:48:17,106  INFO DAO:37 - provedor => eclipselink
+13:48:17,106  INFO DAO:38 - sgbd => postgresql
+13:48:17,107  INFO DAO:39 - ip => localhost
+13:48:17,109  INFO DAO:40 - banco => ticketnow
+13:48:17,109  INFO DAO:45 - configurando postgresql
+13:48:17,687  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [jogo] on the class [class modelo.Ingresso] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+13:48:42,021  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+13:48:42,024  INFO DAO:37 - provedor => eclipselink
+13:48:42,024  INFO DAO:38 - sgbd => postgresql
+13:48:42,024  INFO DAO:39 - ip => localhost
+13:48:42,027  INFO DAO:40 - banco => ticketnow
+13:48:42,027  INFO DAO:45 - configurando postgresql
+13:48:42,610  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7214] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The target entity of the relationship attribute [time] on the class [class modelo.Jogo] cannot be determined.  When not using generics, ensure the target entity is defined on the relationship mapping.
+13:49:50,130  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+13:49:50,133  INFO DAO:37 - provedor => eclipselink
+13:49:50,133  INFO DAO:38 - sgbd => postgresql
+13:49:50,134  INFO DAO:39 - ip => localhost
+13:49:50,136  INFO DAO:40 - banco => ticketnow
+13:49:50,136  INFO DAO:45 - configurando postgresql
+13:49:50,668  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7161] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Entity class [class modelo.Time] has no primary key specified. It should define either an @Id, @EmbeddedId or an @IdClass. If you have defined PK using any of these annotations then make sure that you do not have mixed access-type (both fields and properties annotated) in your entity class hierarchy.
+13:50:21,587  INFO DAO:29 - DAO.open - lendo arquivo dados.properties: 
+13:50:21,591  INFO DAO:37 - provedor => eclipselink
+13:50:21,592  INFO DAO:38 - sgbd => postgresql
+13:50:21,592  INFO DAO:39 - ip => localhost
+13:50:21,595  INFO DAO:40 - banco => ticketnow
+13:50:21,595  INFO DAO:45 - configurando postgresql
+13:50:22,345  INFO DAO:70 - DAO.open - problema de configuracao: 
+Exception Description: An exception was thrown while searching for persistence archives with ClassLoader: jdk.internal.loader.ClassLoaders$AppClassLoader@22d8cfe0
+Internal Exception: jakarta.persistence.PersistenceException: Exception [EclipseLink-28018] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.EntityManagerSetupException
+Exception Description: Predeployment of PersistenceUnit [eclipselink-postgresql] failed.
+Internal Exception: Exception [EclipseLink-7161] (Eclipse Persistence Services - 4.0.1.v202302241130): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: Entity class [class modelo.Time] has no primary key specified. It should define either an @Id, @EmbeddedId or an @IdClass. If you have defined PK using any of these annotations then make sure that you do not have mixed access-type (both fields and properties annotated) in your entity class hierarchy.

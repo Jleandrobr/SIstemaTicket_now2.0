@@ -7,7 +7,22 @@ package modelo;
 
 import java.util.ArrayList;
 
+import jakarta.persistence.Access;
+import jakarta.persistence.AccessType;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
+
+
+@Entity
+@Access(AccessType.PROPERTY)
 public class Jogo {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id; //autogerado
 	private String data;
 	private String local;
@@ -15,10 +30,22 @@ public class Jogo {
 	private double preco;
 	private Time time1;
 	private Time time2;
+	
+	@ManyToMany(mappedBy="ingresso",
+			cascade=CascadeType.ALL)
 	private ArrayList<Ingresso> ingressos = new ArrayList<>();
 	
+	@ManyToMany(mappedBy="time",
+			cascade=CascadeType.ALL)
 	private Time time;
+	
+//	@ManyToMany(mappedBy="ingresso",
+//			cascade=CascadeType.ALL)
+	@ManyToOne(cascade={CascadeType.PERSIST, CascadeType.MERGE})
 	private Ingresso ingresso;
+	
+	
+	public Jogo() {}
 
 	public Jogo(String data, String local, int estoque, double preco, Time time1, Time time2) {
 		//id ser� gerado pelo banco;

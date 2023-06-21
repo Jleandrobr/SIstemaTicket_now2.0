@@ -29,7 +29,7 @@ import javax.swing.table.DefaultTableModel;
 import com.db4o.ObjectContainer;
 import com.db4o.query.Query;
 
-import daodb4o.Util;
+import daojpa.Util;
 import modelo.Ingresso;
 import modelo.IngressoGrupo;
 import modelo.IngressoIndividual;
